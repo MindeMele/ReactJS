@@ -1,0 +1,286 @@
+.login-page,
+.register-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.nav-link {
+    padding: 0;
+}
+
+/* Prisijungimo Forma */
+
+.login-form,
+.register-form {
+    width: 35%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.login-design,
+.register-design {
+    margin: auto 0;
+    width: 60%;
+}
+
+.login-design .title,
+.register-design .title {
+    margin-top: 5vmin;
+}
+
+.login-design .title h1,
+.register-design .title h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.login-design .social-media,
+.register-design .social-media {
+    margin: 3vmin 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-design .social-media .social-btn,
+.register-design .social-media .social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vmin;
+    height: 4vmin;
+}
+
+.login-design .social-media button,
+.register-design .social-media button {
+    border: 0;
+    background: #f7f7f8;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: 0.5s all ease;
+}
+
+.login-design .social-media button span,
+.register-design .social-media button span {
+    display: block;
+    position: absolute;
+    background: #605bff;
+}
+
+.login-design .social-media button span:nth-child(1),
+.register-design .social-media button span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.login-design .social-media button:hover span:nth-child(1),
+.register-design .social-media button:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.login-design .social-media button span:nth-child(2),
+.register-design .social-media button span:nth-child(2) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.login-design .social-media button:hover span:nth-child(2),
+.register-design .social-media button:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.login-design .social-media button span:nth-child(3),
+.register-design .social-media button span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.login-design .social-media button:hover span:nth-child(3),
+.register-design .social-media button:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.login-design .social-media button span:nth-child(4),
+.register-design .social-media button span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.login-design .social-media button:hover span:nth-child(4),
+.register-design .social-media button:hover span:nth-child(4) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.login-design .social-media .social-btn p,
+.register-design .social-media .social-btn p {
+    margin: 0;
+    color: #585858;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.login-design .social-media button:hover p,
+.register-design .social-media button:hover p {
+    color: #030229;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+}
+
+.login-design .line-design,
+.register-design .line-design {
+    width: 100%;
+    margin: 5vmin 0;
+}
+
+.login-design .line-design p,
+.register-design .line-design p {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #e9e9e9;
+    line-height: 0rem;
+}
+
+.login-design .line-design p span,
+.register-design .line-design p span {
+    background: #fff;
+    padding: 0 1vmin;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.login-design .form-group,
+.register-design .form-group {
+    margin: 2vmin 0;
+}
+
+.login-design .form-group label,
+.register-design .form-group label {
+    font-weight: 600;
+}
+
+.login-design .form-group input,
+.register-design .form-group input {
+    border: 0;
+    background: #f7f7f8;
+    padding: 1vmin;
+    margin: 1vmin 0;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.login-design .form-group input:focus,
+.register-design .form-group input:focus {
+    outline: none !important;
+    box-shadow: none;
+    border: none;
+}
+
+.login-design .remember {
+    justify-content: space-between;
+    height: 4vmin;
+}
+
+.login-design .remember p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.login-design .remember p:last-child {
+    color: #605bff;
+    cursor: pointer;
+}
+
+.login-design .form-group button,
+.register-design .form-group button {
+    width: 100%;
+    background-color: #605bff;
+    border: 0;
+    color: #fff;
+    height: 5vmin;
+    border-radius: 10px;
+    transition: all 0.15s ease-in-out;
+}
+
+.login-design .form-group button:hover,
+.register-design .form-group button:hover {
+    transition: all 0.15s ease-in-out;
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(96, 91, 255, 0.68);
+    box-shadow: 0px 0px 20px 2px rgba(96, 91, 255, 0.68);
+}
+
+.login-design .account p,
+.register-design .account p {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.login-design .account p:last-child,
+.register-design .account p:last-child {
+    color: #605bff;
+    cursor: pointer;
+    margin-left: 1vmin;
+}
+/* Prisijungimo Illiustracija */
+
+.login-ill,
+.register-ill {
+    width: 65%;
+    background-color: rgb(245, 245, 245);
+}
+
+@media only screen and (max-width: 1450px) {
+    .login-form,
+    .register-form {
+        width: 50%;
+    }
+    .login-ill,
+    .register-ill {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .login-form,
+    .register-form {
+        width: 100%;
+    }
+    .login-ill,
+    .register-ill {
+        width: 0;
+        display: none;
+    }
+}
